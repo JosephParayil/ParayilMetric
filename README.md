@@ -1,4 +1,4 @@
-# ParayilMetric: <h2>Introducing the Parayil Metric for obtaining Performance-Complexity graphs of machine learning models</h2>
+# ParayilMetric: Introducing the Parayil Metric for obtaining Performance-Complexity graphs of machine learning models
 
 
 A Performance-Complexity graph, or a Time-Complexity graph, depicts the relationship between the performance of an algorithm to the complexity of the task or environment.
