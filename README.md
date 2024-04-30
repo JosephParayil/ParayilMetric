@@ -3,7 +3,7 @@
 
 A Performance-Complexity (PC) graph, or a Time-Complexity graph, depicts the relationship between the performance of an algorithm to the complexity of the task or environment. In computational sciences, these are very common and powerful for algorithm analysis, comparison, and optimization. 
 <br>
-![Time-Complexity graph](https://adrianmejia.com/images/time-complexity-examples.png | width=300)
+<img src="https://adrianmejia.com/images/time-complexity-examples.png" alt="Time-Complexity graph" width="300">
 <br>*Figure 1: Time-complexity graph of common Big-O notation examples
 <br>Image source: Adrian Mejia, adrianmejia.com/how-to-find-time-complexity-of-an-algorithm-code-big-o-notation/, accessed on 4/30/2024.*
 <br>
