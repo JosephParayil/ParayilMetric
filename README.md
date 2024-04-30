@@ -29,8 +29,16 @@ Such a metric takes into account learning over time and is appropriately sensiti
 <br><br>
 Another benefit of using the Parayil Metric is that I only need to run timestep tests specifically for the y-value intervals, instead of scanning the entire timestep space (which would take astronomically long due to the epsilon decay problem). To find the corresponding x value of each y value, I use the binary search algorithm, which is normally used for searching for items in a list, but can be applied in this case quite well.
 <br><br><br>
+<h4>Parayil Metric Demonstration</h4>
 <img src="ParayilMetric.png" alt="Parayil Metric" width="500">
-
+<i><br>Figure 2: Visual demonstration of Parayil Metric using desmos
+<br>Image source: myself, using desmos</i>
+<br><br>
+In the above image, the green graph represents a dummy hypothetical learning graph. <br>
+The horizontal dotted red lines represent the split Y-axis into fixed intervals. <br>
+These dotted red lines intersect the learning graph to create green dotted points, representing the x-y value pairs. <br>
+The orange lines represent the slope values for each of these point pairs. <br>
+The purple line represents the average slope of all the given orange lines. The slope of this orange value is then the final Parayil Metric.
                     
 
 
