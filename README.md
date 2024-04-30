@@ -29,7 +29,7 @@ Such a metric takes into account learning over time and is appropriately sensiti
 <br><br>
 Another benefit of using the Parayil Metric is that I only need to run timestep tests specifically for the y-value intervals, instead of scanning the entire timestep space (which would take astronomically long due to the epsilon decay problem). To find the corresponding x value of each y value, I use the binary search algorithm, which is normally used for searching for items in a list, but can be applied in this case quite well.
 <br><br><br>
-![Parayil Metric](ParayilMetric.png)
+<img src="ParayilMetric.png" alt="Parayil Metric" width="500">
 
                     
 
