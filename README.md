@@ -1,7 +1,10 @@
 # Introducing the Parayil Metric for obtaining Performance-Complexity graphs of machine learning models
 
+<h3>Introduction</h3>
+In this research project, I invented a novel mathematical method, including what I call the Parayil Metric, to obtain Performance-Complexity graphs of machine learning models. Even though they would be of extreme value, such Performance-Complexity graphs have largely remained elusive in the field of machine learning due to various fundamental challenges. I have overcome these challenges using my Parayil Metric. I am applying this method to evaluate the comparative performance of the Q-Learning and Deep Q-Learning models over differing discrete environment complexities.
 
-A Performance-Complexity (PC) graph, or a Time-Complexity graph, depicts the relationship between the performance of an algorithm to the complexity of the task or environment. In computational sciences, these are very common and powerful for algorithm analysis, comparison, and optimization. 
+<h3>Performance-Complexity Graph</h3>
+A Performance-Complexity (PC) graph or a Time-Complexity graph depicts the relationship between the performance of an algorithm to the complexity of the task or environment. In computational sciences, these are very common and powerful for algorithm analysis, comparison, and optimization. 
 <br><br>
 <img src="https://adrianmejia.com/images/time-complexity-examples.png" alt="Time-Complexity graph" width="300">
 <br><i>Figure 1: Time-complexity graph of common Big-O notation examples
@@ -40,10 +43,7 @@ These dotted red lines intersect the learning graph to create green dotted point
 The orange lines represent the slope values for each of these point pairs. <br>
 The purple line represents the average slope of all the given orange lines. The slope of this orange value is then the final Parayil Metric.
                     
-
-
 <br><br>
- 
-<br>
 <h3>Getting a singular metric for environment complexity</h3>
-
+To construct a PC graph, I would also need a singular metric for environment complexity. However, this comes with its own set of challenges. When I refer to environment, I am referring to a reinforcement learning environment.<br>
+The complexity of an environment is a complex thing to measure. There are countless factors that could affect the "complexity"
