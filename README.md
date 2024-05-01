@@ -3,7 +3,7 @@
 <h3>Introduction</h3>
 In this research project, I invented a novel mathematical method, including what I call the Parayil Metric, to obtain Performance-Complexity graphs of machine learning models. Even though they would be of extreme value, such Performance-Complexity graphs have largely remained elusive in the field of machine learning due to various fundamental challenges. I have overcome these challenges using my Parayil Metric. I am applying this method to evaluate the comparative performance of the Q-Learning and Deep Q-Learning models over differing discrete environment complexities.
 <br><br>
-The point of this repository is to present what I believe is a very valuable contribution to the field of machine learning.
+The point of this repository is to present what I believe is a very valuable contribution to the field of machine learning: The Parayil Metric
 <br>
 <h3>Performance-Complexity Graph</h3>
 A Performance-Complexity (PC) graph or a Time-Complexity graph depicts the relationship between the performance of an algorithm to the complexity of the task or environment. In computational sciences, these are very common and powerful for algorithm analysis, comparison, and optimization. 
@@ -21,7 +21,6 @@ To construct a PC graph of a given machine learning model, I would have to be ab
 The data that we have, however, is a learning graph, a relationship between the timesteps of training and the performance over time. Over more timesteps or iterations of training, the model will generally become more adept. <br>
 Converting a learning graph to a singular metric of how "good" the model trained is not straightforward. While there exists techniques such as finding the area under the graph, these are not well-suited methods for evaluating how good a learning graph is.
 <br>
-LEARNING GRPAH IMAGE
 <br>
 Additionally, obtaining a learning graph in the first place is not always straightforward. Due to epsilon decay, which applies in the algorithms of QL and DQN, doing a single run-through of the training process to obtain a learning graph in that way is not possible, because the number of total timesteps trained set to train for affects the rate of epsilon decay, which in turn skews the learning graph. To obtain a singular point of the learning graph, one would have to run the training process all the way until that point, and restart the process for another point, which quickly becomes overly time consuming.
 
