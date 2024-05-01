@@ -58,6 +58,15 @@ Although this ignores the countless other factors that affect complexity, in the
 <h3>Evaluating the comparative performance of Q-Learning and Deep Q-Learning Network over discrete environment complexities</h3>
 The original research project originated with the goal of shedding light on the interesting differences in performance between QL and DQN depending on the environment complexity. <br>
 DQN is a much more advanced model than QL, and can handle much more complex environments. However, in my research, I demonstrated that QL can actually outperform DQN when it comes to very small environment complexities. And here there was an extreme difference too. The Parayil Metric of QL on FrozenLake 4x4 was about 55 times greater than the Parayil Metric than DQN, which means that QL outperformed DQN with a ratio of 55 to 1 in terms of performance.<br>
+<br>
+<img src="https://gymnasium.farama.org/_images/frozen_lake.gif" alt="FrozenLake 4x4" width="300">
+<br></b><i>Figure 3: FrozenLake 4x4, one of the Toy Text environment from Gymnasium, chosen for its extremely small state and action size.
+<br>Image source: Gymnasium, gymnasium.farama.org/environments/toy_text/frozen_lake/, accessed on 4/30/2024.</i>
+<br>
+
+
 So, if QL outperforms DQN at small environment complexities, but DQN outperforms QL at larger environment complexities, there must exist a point in terms of environment complexity at which these two models converge. This is how my investigation of obtaining PC graphs began. <br>
 I invented the Parayil Metric and an elegantly efficient method to overcome several fundamental challenges and construct a PC graph for any machine learning model. <br>
 Unfortunately, due to computational time constraints, I was not able to actualize the PC graph for QL and DQN just yet. This is because, although my invented methodology is very efficient, the very nature of evaluating machine learning performance means that I would have to run many (a hundred or so) repetitive trials of the machine learning training process, which quickly adds up. 
+
+
