@@ -39,11 +39,24 @@ Another benefit of using the Parayil Metric is that I only need to run timestep 
 <br><br>
 In the above image, the green graph represents a dummy hypothetical learning graph. <br>
 The horizontal dotted red lines represent the split Y-axis into fixed intervals. <br>
-These dotted red lines intersect the learning graph to create green dotted points, representing the x-y value pairs. <br>
+The green dotted points are the intersections of the horizontal dotted red lines and the learning graph, representing the x-y value pairs. <br>
 The orange lines represent the slope values for each of these point pairs. <br>
-The purple line represents the average slope of all the given orange lines. The slope of this orange value is then the final Parayil Metric.
-                    
+The purple line represents the average slope of all the given orange lines. The slope of this orange value is then the final Parayil Metric.<br>
+Note: Although not visible, here are horizontal lines at 100% and 0%. The point at 100% does not exist, so we treat the X-value as infinite. The orange line for that point (infinity, 100%), would have a slope  of 0, and is also not visible, but nevertheless significantly affects the average Parayil Metric. <br>
+
+
+
 <br><br>
 <h3>Getting a singular metric for environment complexity</h3>
-To construct a PC graph, I would also need a singular metric for environment complexity. However, this comes with its own set of challenges. When I refer to environment, I am referring to a reinforcement learning environment.<br>
-The complexity of an environment is a complex thing to measure. There are countless factors that could affect the "complexity"
+To construct a PC graph, I would also need a singular metric for environment complexity (complexity of a reinforcement learning environment). However, this comes with its own set of challenges. <br>
+The complexity of an environment is a complex thing to measure. There are countless factors that could affect the "complexity" of an environment. So assigning a singular numerical score of the complexity of an environment is not straightforward. <br>
+I did not address this problem nearly as elaborately I did the last. How I calculated the complexity metric is by simply multiplying the environment's discrete state size and action space. <br>
+Although this ignores the countless other factors that affect complexity, in the context of my current goal, which was to evaluate the comparative performance of QL and DQN over the different discrete Toy Text environments from Gymnasium, I believe it is sufficient. <br>
+<br><br>
+
+<h3>Evaluating the comparative performance of Q-Learning and Deep Q-Learning Network over discrete environment complexities</h3>
+The original research project originated with the goal of shedding light on the interesting differences in performance between QL and DQN depending on the environment complexity. <br>
+DQN is a much more advanced model than QL, and can handle much more complex environments. However, in my research, I demonstrated that QL can actually outperform DQN when it comes to very small environment complexities. And here there was an extreme difference too. The Parayil Metric of QL on FrozenLake 4x4 was about 55 times greater than the Parayil Metric than DQN, which means that QL outperformed DQN with a ratio of 55 to 1 in terms of performance.<br>
+So, if QL outperforms DQN at small environment complexities, but DQN outperforms QL at larger environment complexities, there must exist a point in terms of environment complexity at which these two models converge. This is how my investigation of obtaining PC graphs began. <br>
+I invented the Parayil Metric and an elegantly efficient method to overcome several fundamental challenges and construct a PC graph for any machine learning model. <br>
+Unfortunately, due to computational time constraints, I was not able to actualize the PC graph for QL and DQN just yet. This is because, although my invented methodology is very efficient, the very nature of evaluating machine learning performance means that I would have to run many (a hundred or so) repetitive trials of the machine learning training process, which quickly adds up. 
