@@ -2,7 +2,9 @@
 
 <h3>Introduction</h3>
 In this research project, I invented a novel mathematical method, including what I call the Parayil Metric, to obtain Performance-Complexity graphs of machine learning models. Even though they would be of extreme value, such Performance-Complexity graphs have largely remained elusive in the field of machine learning due to various fundamental challenges. I have overcome these challenges using my Parayil Metric. I am applying this method to evaluate the comparative performance of the Q-Learning and Deep Q-Learning models over differing discrete environment complexities.
-
+<br><br>
+The point of this repository is to present what I believe is a very valuable contribution to the field of machine learning.
+<br>
 <h3>Performance-Complexity Graph</h3>
 A Performance-Complexity (PC) graph or a Time-Complexity graph depicts the relationship between the performance of an algorithm to the complexity of the task or environment. In computational sciences, these are very common and powerful for algorithm analysis, comparison, and optimization. 
 <br><br>
@@ -11,7 +13,7 @@ A Performance-Complexity (PC) graph or a Time-Complexity graph depicts the relat
 <br>Image source: Adrian Mejia, adrianmejia.com/how-to-find-time-complexity-of-an-algorithm-code-big-o-notation/, accessed on 4/30/2024.</i>
 <br>
 <br>However, in the context of machine learning, such PC graphs depicting algorithm performance on learning a task over differing environment/task complexities are mostly absent, even though they would be highly valuable in the analysis of machine learning algorithms. The reason for this is due to the infeasibility of obtaining singular metrics for both machine learning model performance and environment complexity.
-<br>In this research project, I overcome these fundamental challenges by inventing a novel mathematical method, involving what I have named the _Parayil Metric_. I am applying this method in the comparative analysis of the RL models Q-Learning (QL) and Deep Q-Learning (DQN) for their PC graphs. <br>
+<br>In this research project, I overcome these fundamental challenges by inventing a novel mathematical method, involving what I have named the Parayil Metric. I am applying this method in the comparative analysis of the RL models Q-Learning (QL) and Deep Q-Learning (DQN) for their PC graphs. <br>
 
 <h3>Getting a singular metric for machine learning performance</h3>
 
