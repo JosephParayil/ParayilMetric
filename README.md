@@ -55,7 +55,7 @@ Note: Although not visible, here are horizontal lines at 100% and 0%. The point 
 To construct a PC graph, I would also need a singular metric for environment complexity (complexity of a reinforcement learning environment). However, this comes with its own set of challenges. <br>
 The complexity of an environment is a complex thing to measure. There are countless factors that could affect the "complexity" of an environment. So assigning a singular numerical score of the complexity of an environment is not straightforward. <br>
 I did not address this problem nearly as elaborately I did the last. How I calculated the complexity metric is by simply multiplying the environment's discrete state size and action space. <br>
-Although this ignores the countless other factors that affect complexity, in the context of my current goal, which was to evaluate the comparative performance of QL and DQN over the different discrete Toy Text environments from Gymnasium, I believe it is sufficient. <br>
+Although this ignores the countless other factors that affect complexity, in the context of my current goal, which was to evaluate the comparative performance of QL and DQN over the different discrete Toy Text environments from Gymnasium, I believe it is sufficient. A future project is envisioned to obtain a singular metric for environment complexity. <br>
 <br><br>
 
 <h3>Evaluating the comparative performance of Q-Learning and Deep Q-Learning Network over discrete environment complexities</h3>
