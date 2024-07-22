@@ -2,9 +2,12 @@
 
 <h3>Introduction</h3>
 In this research project, I invented a novel mathematical method, including what I call the Parayil Metric, to obtain Performance-Complexity graphs of machine learning models. Even though they would be of extreme value, such Performance-Complexity graphs have largely remained elusive in the field of machine learning due to various fundamental challenges. I have overcome these challenges using my Parayil Metric. I am applying this method to evaluate the comparative performance of the Q-Learning and Deep Q-Learning models over differing discrete environment complexities.
-<br><br>
-The point of this repository is to present what I believe is a very valuable contribution to the field of machine learning: The Parayil Metric
 <br>
+The point of this repository is to present what I believe is a very valuable contribution to the field of reinforcement learning: The Parayil Metric
+<br><br>
+<h3>Acknowledgements</h3>
+I would like to express my sincere gratitude to Dr. Sean Mondesire for his invaluable mentorship throughout this research project. Dr. Mondesire's expertise in the field of reinforcement learning was invaluable in allowing me to undertake this research project. Without Dr. Mondesire, I would never have been able to properly pursue this project.
+<br><br>
 <h3>Performance-Complexity Graph</h3>
 A Performance-Complexity (PC) graph or a Time-Complexity graph depicts the relationship between the performance of an algorithm to the complexity of the task or environment. In computational sciences, these are very common and powerful for algorithm analysis, comparison, and optimization. 
 <br><br>
