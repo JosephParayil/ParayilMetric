@@ -15,16 +15,13 @@
 
 #   If you wish to run this code for yourself, you must substitute the omitted
 #   part at the beginning with code for training a specific RL model on a specific
-#   environment, preferably with a function called run(timesteps). I recommend using
-#   johnnycode's example because his are well optimized and explains the code.
+#   environment, preferably with a function called run(timesteps).
 
 #   That being said, you will find that this analysis code that I have created
 #   is highly extensive. The size of this analysis code actually far exceeds the
 #   length of the code for the actual RL training code. It demonstrates an 
 #   intelligently elegant method to obtain a Parayil Metric.
 
-#   The current state of this code is very messy and unorganized. I apologize
-#   for this, and I plan to clean it up and even redo it in the future.
 
 
 import gymnasium as gym
@@ -40,9 +37,9 @@ import json
 from google.colab import drive
 drive.mount('/content/drive')
 
-#Based on google drive
-resultFilePath = '/content/drive/MyDrive/QL_vs_DQN_Data/Actual_Experiment/results.txt'
-dataFilePath = '/content/drive/MyDrive/QL_vs_DQN_Data/Actual_Experiment/testHistory.json'
+#Based on google drive; change based on your own file path
+resultFilePath = '/please/insert/your/file/path/results.txt'
+dataFilePath = '/please/insert/your/file/path/testHistory.json'
 
 
 #   IMPORTANT NOTE: Trying to run this code will not work. The code for the 
@@ -52,7 +49,6 @@ dataFilePath = '/content/drive/MyDrive/QL_vs_DQN_Data/Actual_Experiment/testHist
 """
 OMITTED:
 Insert relevant code for training QL or DQN on a given environment here
-I used johnnycode's tutorial code examples
 """
 
 
