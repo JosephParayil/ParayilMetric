@@ -69,8 +69,13 @@ DQN is a much more advanced model than QL, and can handle much more complex envi
 
 
 So, if QL outperforms DQN at small environment complexities, but DQN outperforms QL at larger environment complexities, there must exist a point in terms of environment complexity at which these two models converge. This is how my investigation of obtaining PC graphs began. <br>
-I invented the Parayil Metric and an elegantly efficient method to overcome several fundamental challenges and construct a PC graph for any machine learning model. <br>
-Unfortunately, due to computational time constraints, I was not able to actualize the PC graph for QL and DQN just yet. This is because, although my invented methodology is very efficient, the very nature of evaluating machine learning performance means that I would have to run many (a hundred or so) repetitive trials of the machine learning training process, which quickly adds up. <br>
+I invented the Parayil Metric and an elegantly efficient method to overcome several fundamental challenges and construct a PC graph for any machine learning model.<br>
 
-I was, however, able to obtain the Parayil Metrics for both QL and DQN on the FrozenLake 4x4 environment only. The Parayil Metric of QL was approximately 55 times greater than that of DQN (as I mentioned earlier), which is an extreme difference. 
+Unfortunately, due to computational time constraints, I was not able to actualize the PC graph for QL and DQN just yet. This is because, although my invented methodology is very efficient, the very nature of evaluating machine learning performance means that I would have to run thousands of repetitive trials of the machine learning training process, which would require astronomical run-times.<br>
+
+I was, however, able to obtain the Parayil Metrics for both QL and DQN on the FrozenLake 4x4 environment only. The Parayil Metric of QL was approximately 55 times greater than that of DQN (as I mentioned earlier), which is an extreme difference. <br>
+
+
+<h3>Future plans</h3>
+This research project is actively on-going. To finally compute a PC graph for the QL vs DQN comparison, I would need to obtain better computational resources. When conditions permit, I would have to procure and use cloud resources to concurrently run multiple (likely in the dozens) experiment instances to divide and hasten total run-time.
 
