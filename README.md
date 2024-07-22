@@ -20,8 +20,8 @@ A Performance-Complexity (PC) graph or a Time-Complexity graph depicts the relat
 
 <h3>Getting a singular metric for machine learning performance</h3>
 
-To construct a PC graph of a given machine learning model, I would have to be able to obtain a single numerical value that describes how well and fast the model learned at a certain environment. <br><br>
-The data that we have, however, is a learning graph, a relationship between the timesteps of training and the performance over time. Over more timesteps or iterations of training, the model will generally become more adept. <br>
+To construct a PC graph of a given machine learning model, I would have to be able to obtain single numerical values that describe how well and fast the model learned at a certain environment complexity. <br><br>
+The data that we have to start with, however, is a learning graph, a relationship between the timesteps of training and the performance over time. Over more timesteps or iterations of training, the model will generally become more adept. <br>
 Converting a learning graph to a singular metric of how "good" the model trained is not straightforward. While there exist techniques such as finding the area under the graph, these are not well-suited methods for evaluating how good a learning graph is.
 <br>
 <br>
