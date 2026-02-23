@@ -19,8 +19,8 @@
 
 #   That being said, you will find that this analysis code that I have created
 #   is highly extensive. The size of this analysis code actually far exceeds the
-#   length of the code for the actual RL training code. It demonstrates an 
-#   intelligently elegant method to obtain a Parayil Metric.
+#   length of the code for the actual RL training code. It demonstrates a
+#   method to obtain a Parayil Metric.
 
 
 
