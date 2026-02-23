@@ -1,9 +1,7 @@
 # Introducing the Parayil Metric for obtaining Performance-Complexity graphs of machine learning models
 
 <h3>Introduction</h3>
-In this research project, I invented a novel mathematical method, including what I call the Parayil Metric, to obtain Performance-Complexity graphs of machine learning models. Even though they would be of extreme value, such Performance-Complexity graphs have largely remained elusive in the field of machine learning due to various fundamental challenges. I have overcome these challenges using my Parayil Metric. I am applying this method to evaluate the comparative performance of the Q-Learning and Deep Q-Learning models over differing discrete environment complexities.
-<br>
-The point of this repository is to present what I believe is a very valuable contribution to the field of reinforcement learning: The Parayil Metric
+In this research project, I introduce a new method to obtain Performance-Complexity graphs of machine learning models. Even though they would be of extreme value, such Performance-Complexity graphs have largely remained elusive in the field of machine learning due to various fundamental challenges. I have overcome these challenges using my Parayil Metric. I am applying this method to evaluate the comparative performance of the Q-Learning and Deep Q-Learning models over differing discrete environment complexities.
 <br><br>
 <h3>Acknowledgements</h3>
 I would like to express my sincere gratitude to <a href="https://www.ist.ucf.edu/faculty/sean-mondesire-ph-d/">Dr. Sean Mondesire</a> for his invaluable mentorship throughout this research project. Dr. Mondesire's expertise in the field of reinforcement learning was invaluable in allowing me to undertake this research project. Without Dr. Mondesire, I would never have been able to properly pursue this project.
@@ -28,7 +26,7 @@ Converting a learning graph to a singular metric of how "good" the model trained
 Additionally, obtaining a learning graph in the first place is not always straightforward. Due to epsilon decay, which applies in the algorithms of QL and DQN, doing a single run-through of the training process to obtain a learning graph in that way is not possible, because the number of total timesteps trained set to train for affects the rate of epsilon decay, which in turn skews the learning graph. To obtain a singular point of the learning graph, one would have to run the training process all the way until that point, and restart the process for another point, which quickly becomes overly time-consuming.
 
 <h3>Parayil Metric</h3
-My solution was to kill these two birds with one stone, by inventing the Parayil Metric. The Parayil Metric aims to obtain a single numeric value to describe the nature of a given learning graph. 
+The Parayil Metric aims to obtain a single numeric value to describe the nature of a given learning graph. 
 
 How the Parayil Metric works is that it splits the y-values (performance, in terms of percentage win rate) into fixed intervals (ex: 5%, 10% [...] 90% 95% 100%). For each of these y values, I find the corresponding x value (timestep). In other words, I find what is the timestep that yields an average win rate closest to the given y value. If the agent is not able to achieve the given win rate ever, an x value of infinity is assigned.  I then transform the x-values from timesteps to actual physical time. So I would run tests determining on average how much time would it take to run the given amount of timesteps of training, running plenty of trials to account for randomness and differences in computational resources. For each of these transformed x-y pairs, I find the slopes by dividing the y over the x. Finally, the Parayil Metric would then be the average of all these slope values. 
 <br><br>
@@ -69,9 +67,9 @@ DQN is a much more advanced model than QL, and can handle much more complex envi
 
 
 So, if QL outperforms DQN at small environment complexities, but DQN outperforms QL at larger environment complexities, there must exist a point in terms of environment complexity at which these two models converge. This is how my investigation of obtaining PC graphs began. <br>
-I invented the Parayil Metric and an elegantly efficient method to overcome several fundamental challenges and construct a PC graph for any machine learning model.<br>
+I invented the Parayil Metric and an efficient method to overcome several fundamental challenges and construct a PC graph for any machine learning model.<br>
 
-Unfortunately, due to computational time constraints, I was not able to actualize the PC graph for QL and DQN just yet. This is because, although my invented methodology is very efficient, the very nature of evaluating machine learning performance means that I would have to run thousands of repetitive trials of the machine learning training process, which would require astronomical run-times.<br>
+Unfortunately, due to computational time constraints, I was not able to actualize the PC graph for QL and DQN just yet. This is because, although my invented methodology is very efficient, the very nature of evaluating machine learning performance means that I would have to run thousands of repetitive trials of the machine learning training process, which would still require astronomical run-times.<br>
 
 I was, however, able to obtain the Parayil Metrics for both QL and DQN on the FrozenLake 4x4 environment only. The Parayil Metric of QL was approximately 55 times greater than that of DQN (as I mentioned earlier), which is an extreme difference. <br>
 
